@@ -20,11 +20,15 @@
             border-right: 1px solid #888;
             overflow: auto;
             padding: 0 10px;
+            background-color: #000000;
+        }
+        h3{
+            color: #cccccc;
         }
         .menu > a{
             display: block;
             margin: 5px 0;
-            color: #045b88;
+            color: #00621d;
             text-decoration: none;
             cursor: pointer;
         }
@@ -32,7 +36,7 @@
             text-decoration: underline;
         }
         a.active{
-            color: red;
+            color: rgb(255, 196, 0);
         }
         iframe{
             flex-grow: 1;
@@ -88,6 +92,7 @@
     <script>
         const iframe = document.querySelector('iframe')
         const button = document.querySelector('.src')
+        button.style.display = 'none';
         const samples = document.querySelectorAll('.sample')
         for(let sample of samples){
             sample.addEventListener('click', ()=>{
